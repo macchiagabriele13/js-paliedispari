@@ -53,20 +53,19 @@ console.log(userNumber);
 
 /* Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione) */
 
-let cpuNumber = Math.floor((Math.random() * 5));
-console.log(cpuNumber);
+/* let cpuNumber = Math.floor((Math.random() * 5));
+console.log(cpuNumber); */
 
 /* Ho provato a creare direttamente una funzione ma non capivo come inserirla */
 
-/* let cpuNumber = ();
 
-function randomNumberCpu(number) {
-    let number= Math.floor((Math.random() * 10));
-    return number
+
+function randomNumberCpu(min , max) {
+    return Math.floor(Math.random() * (min - max)) + min;
 }
 
-randomNumberCpu(cpuNumber)
-console.log(cpuNumber); */
+let cpuNumber = randomNumberCpu(1 , 5)
+console.log(cpuNumber);
 
 /* Sommiamo i due numeri */
 
